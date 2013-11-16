@@ -1,0 +1,36 @@
+﻿@{
+   Page.Title = "Mostrar tabla base datos";  
+}
+      
+<section id="main">
+    <h1> Base de datos  </h1> 
+    <p>
+       <link href="main3.css" rel="stylesheet" />
+
+         <video width="320" height="240" controls>
+        
+              
+              
+
+          @{ 
+var db = Database.Open("bakery"); 
+var dbdata = db.Query("SELECT Name, Price FROM Products"); 
+var myChart = new Chart(width: 600, height: 400) 
+   .AddTitle("Product Sales") 
+   .DataBindTable(dataSource: dbdata, xField: "Name")
+   .Write();
+ 
+}
+ 
+
+        
+      
+    </p>
+               
+
+ 
+
+                
+     
+    
+</section>

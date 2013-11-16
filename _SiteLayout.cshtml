@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta charset="utf-8" />
+        <title>Panama City  - @Page.Title</title>
+        <link href="~/Content/Site.css" rel="stylesheet" />
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <script src="~/Scripts/modernizr-2.6.2.js"></script>
+        <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+        @RenderSection("Scripts", required: false)
+    </head>
+    <body>
+        <div id="page">
+            <header>
+                <p class="site-title"><a href="~/"> Panama  City 
+                    <ul>
+                        <li><a href="~/">Inicio</a></li>
+                        <li><a href="~/About">Acerca de Panama</a></li>
+                         <li><a href="~/Page">Acerca de la salsa</a></li>
+                          <li><a href="~/Page2">Mostrar base de datos</a></li>
+                         <li><a href="~/Page3">Capt 6 </a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="body">
+                @RenderBody()
+            </div>
+            <footer>
+                &copy;@DateTime.Now.Year - PANAMA COUNTRY
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+body {
+    -webkit-transition: all 3 ;
+-moz-transition: all 3 ;
+-ms-transition: all 3 ;
+-o-transition: all 3 ;
+transition: all 3 ;
+
+}
